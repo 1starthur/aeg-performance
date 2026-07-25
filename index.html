@@ -4,84 +4,409 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AEG Performance</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <h1>AEG Performance</h1>
+    <!-- ================= TOP BAR ================= -->
+
+    <div class="top-bar">
+
+        <div class="container">
+
+            <div class="top-left">
+                <span>📞 (61) 98299-4996</span>
+                <span>✉ contato@aegperformance.com.br</span>
+            </div>
+
+            <div class="top-right">
+                <span>🚚 Frete para todo o Brasil</span>
+            </div>
+
         </div>
 
-        <nav>
+    </div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="container header-content">
+
+            <div class="logo">
+                AEG <span>Performance</span>
+            </div>
+
+            <div class="search-box">
+
+                <input type="text" placeholder="Pesquisar peças, marcas ou códigos...">
+
+                <button>🔍</button>
+
+            </div>
+
+            <div class="actions">
+
+                <button class="login">
+                    👤 Minha Conta
+                </button>
+
+                <button class="favorites">
+                    ❤
+                </button>
+
+                <button class="cart">
+                    🛒
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= MENU ================= -->
+
+    <nav class="navbar">
+
+        <div class="container">
+
             <ul>
+
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Categorias</a></li>
+                <li><a href="#">Marcas</a></li>
                 <li><a href="#">Promoções</a></li>
+                <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
+
             </ul>
-        </nav>
-    </header>
 
-    <!-- Banner -->
-    <section class="banner">
-        <div class="banner-content">
-            <h2>Potência e Performance para seu veículo</h2>
-            <p>As melhores peças automotivas com qualidade garantida.</p>
-            <button>Ver Produtos</button>
         </div>
-    </section>
 
-    <!-- Categorias -->
-    <section class="categorias">
-        <h2>Categorias</h2>
+    </nav>
 
-        <div class="cards">
-            <div class="card">Motor</div>
-            <div class="card">Freios</div>
-            <div class="card">Suspensão</div>
-            <div class="card">Elétrica</div>
-        </div>
-    </section>
+    <!-- ================= HERO ================= -->
 
-    <!-- Produtos -->
-    <section class="produtos">
-        <h2>Produtos em Destaque</h2>
+    <section class="hero">
 
-        <div class="produtos-grid">
+        <div class="container hero-content">
 
-            <div class="produto">
-                <img src="https://via.placeholder.com/250" alt="Produto">
-                <h3>Filtro de Ar Esportivo</h3>
-                <p>R$ 149,90</p>
-                <button>Comprar</button>
-            </div>
+            <span class="tag">
+                PERFORMANCE AUTOMOTIVA
+            </span>
 
-            <div class="produto">
-                <img src="https://via.placeholder.com/250" alt="Produto">
-                <h3>Pastilha de Freio</h3>
-                <p>R$ 89,90</p>
-                <button>Comprar</button>
-            </div>
+            <h1>
+                Performance começa com as peças certas.
+            </h1>
 
-            <div class="produto">
-                <img src="https://via.placeholder.com/250" alt="Produto">
-                <h3>Amortecedor Premium</h3>
-                <p>R$ 299,90</p>
-                <button>Comprar</button>
+            <p>
+
+                Encontre peças automotivas, acessórios e componentes
+                das melhores marcas do mercado.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="btn-primary">
+                    Ver Produtos
+                </button>
+
+                <button class="btn-secondary">
+                    Promoções
+                </button>
+
             </div>
 
         </div>
+
     </section>
 
-    <!-- Rodapé -->
+    <!-- ================= CATEGORIAS ================= -->
+
+    <section class="categories">
+
+        <div class="container">
+
+            <h2>Categorias</h2>
+
+            <div class="category-grid">
+
+                <div class="category-card">Motor</div>
+
+                <div class="category-card">Freios</div>
+
+                <div class="category-card">Suspensão</div>
+
+                <div class="category-card">Elétrica</div>
+
+                <div class="category-card">Óleos</div>
+
+                <div class="category-card">Performance</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MARCAS ================= -->
+
+    <section class="brands">
+
+        <div class="container">
+
+            <h2>Marcas Parceiras</h2>
+
+            <div class="brand-grid">
+
+                <div class="brand">Bosch</div>
+
+                <div class="brand">NGK</div>
+
+                <div class="brand">Cofap</div>
+
+                <div class="brand">SKF</div>
+
+                <div class="brand">Mobil</div>
+
+                <div class="brand">Monroe</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUTOS ================= -->
+
+    <section class="products">
+
+        <div class="container">
+
+            <h2>Produtos em Destaque</h2>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <img src="img/products/filtro-ar.jpg" alt="Filtro de Ar">
+
+                    <h3>Filtro de Ar Esportivo</h3>
+
+                    <p class="price">
+                        R$ 149,90
+                    </p>
+
+                    <button>
+                        Comprar
+                    </button>
+
+                </div>
+
+                <div class="product-card">
+
+                    <img src="img/products/pastilha-freio.jpg" alt="Pastilha de Freio">
+
+                    <h3>Pastilha de Freio</h3>
+
+                    <p class="price">
+                        R$ 89,90
+                    </p>
+
+                    <button>
+                        Comprar
+                    </button>
+
+                </div>
+
+                <div class="product-card">
+
+                    <img src="img/products/amortecedor.jpg" alt="Amortecedor">
+
+                    <h3>Amortecedor Premium</h3>
+
+                    <p class="price">
+                        R$ 299,90
+                    </p>
+
+                    <button>
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= BENEFÍCIOS ================= -->
+
+    <section class="benefits">
+
+        <div class="container">
+
+            <div class="benefit">
+
+                🚚
+
+                <h3>Entrega Rápida</h3>
+
+                <p>Envio para todo o Brasil.</p>
+
+            </div>
+
+            <div class="benefit">
+
+                🔒
+
+                <h3>Pagamento Seguro</h3>
+
+                <p>Compra protegida.</p>
+
+            </div>
+
+            <div class="benefit">
+
+                🛠️
+
+                <h3>Garantia</h3>
+
+                <p>Produtos com garantia.</p>
+
+            </div>
+
+            <div class="benefit">
+
+                📞
+
+                <h3>Suporte</h3>
+
+                <p>Atendimento especializado.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+
+    <section class="sobre">
+
+        <div class="container">
+
+            <h2>Sobre a AEG Performance</h2>
+
+            <p>
+
+                A AEG Performance nasceu para oferecer peças automotivas,
+                acessórios e componentes com qualidade, confiança e excelente
+                atendimento. Nosso compromisso é entregar produtos das melhores
+                marcas para quem busca desempenho, segurança e durabilidade.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div class="container">
+
+            <h2>Receba nossas promoções</h2>
+
+            <p>
+
+                Cadastre seu e-mail e fique por dentro das ofertas.
+
+            </p>
+
+            <form>
+
+                <input type="email" placeholder="Digite seu e-mail">
+
+                <button>
+                    Cadastrar
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <p>&copy; 2026 AEG Performance - Todos os direitos reservados.</p>
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <h3>AEG Performance</h3>
+
+                <p>
+                    Peças automotivas de qualidade para quem busca desempenho.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Institucional</h4>
+
+                <p>Sobre Nós</p>
+
+                <p>Contato</p>
+
+                <p>Política de Privacidade</p>
+
+            </div>
+
+            <div>
+
+                <h4>Atendimento</h4>
+
+                <p>WhatsApp</p>
+
+                <p>E-mail</p>
+
+                <p>Segunda a Sexta</p>
+
+            </div>
+
+            <div>
+
+                <h4>Redes Sociais</h4>
+
+                <p>Instagram</p>
+
+                <p>Facebook</p>
+
+                <p>YouTube</p>
+
+            </div>
+
+        </div>
+
     </footer>
 
     <script src="js/script.js"></script>
