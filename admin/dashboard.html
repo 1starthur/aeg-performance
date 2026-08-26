@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | AEG Performance</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="../js/dashboard.js"></script>
+
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <aside class="sidebar">
+
+    <div class="logo">
+
+        <h2>AEG <span>Performance</span></h2>
+
+    </div>
+
+    <nav class="menu">
+
+        <ul>
+
+            <li class="active">
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="produtos.html">
+                    <i class="fa-solid fa-box"></i>
+                    <span>Produtos</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="categorias.html">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Categorias</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="marcas.html">
+                    <i class="fa-solid fa-tags"></i>
+                    <span>Marcas</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="estoque.html">
+                    <i class="fa-solid fa-warehouse"></i>
+                    <span>Estoque</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="pedidos.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Pedidos</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="clientes.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Clientes</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Configurações</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="sidebar-user">
+
+        <div class="avatar">
+
+            <i class="fa-solid fa-user"></i>
+
+        </div>
+
+        <div class="user-info">
+
+            <h4>Administrador</h4>
+
+            <p>AEG Performance</p>
+
+        </div>
+
+    </div>
+
+</aside>
+
+        <div class="content">
+
+            <div class="topbar-left">
+
+    <h1>Dashboard</h1>
+
+</div>
+
+<div class="topbar-right">
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input type="text" placeholder="Pesquisar...">
+
+    </div>
+
+    <button class="notification">
+
+        <i class="fa-regular fa-bell"></i>
+
+    </button>
+
+    <div class="profile">
+
+        <img src="https://i.pravatar.cc/40" alt="Administrador">
+
+        <div>
+
+            <h4>Administrador</h4>
+
+            <small>Online</small>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <main class="main-content">
+
+    <section class="crud-header">
+
+        <div>
+
+            <h2>Produtos</h2>
+
+            <p>Gerencie todos os produtos da loja.</p>
+
+        </div>
+
+        <button class="btn-primary">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Novo Produto
+
+        </button>
+
+    </section>
+
+    <section class="crud-filters">
+
+        <input
+            type="text"
+            placeholder="Pesquisar produto...">
+
+        <select>
+
+            <option>Todas as categorias</option>
+
+            <option>Motor</option>
+
+            <option>Freios</option>
+
+            <option>Suspensão</option>
+
+        </select>
+
+    </section>
+
+    <section class="crud-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Imagem</th>
+
+                    <th>Produto</th>
+
+                    <th>Marca</th>
+
+                    <th>Estoque</th>
+
+                    <th>Preço</th>
+
+                    <th>Ações</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>1</td>
+
+                    <td>
+                        <img src="https://placehold.co/60x60" alt="">
+                    </td>
+
+                    <td>Filtro de Ar Esportivo</td>
+
+                    <td>K&N</td>
+
+                    <td>25</td>
+
+                    <td>R$ 289,90</td>
+
+                    <td>
+
+                        <button class="btn-edit">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+
+                        <button class="btn-delete">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- Modal -->
+
+<div class="modal" id="productModal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h2>Novo Produto</h2>
+
+            <button id="closeModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <form id="productForm">
+
+            <div class="form-group">
+
+                <label>Nome do Produto</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Ex: Óleo Motul 5W40">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Marca</label>
+
+                <select id="marca">
+
+                    <option>Selecione...</option>
+
+                    <option>Motul</option>
+
+                    <option>Bosch</option>
+
+                    <option>NGK</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Categoria</label>
+
+                <select id="categoria">
+
+                    <option>Selecione...</option>
+
+                    <option>Motor</option>
+
+                    <option>Freios</option>
+
+                    <option>Suspensão</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>Preço</label>
+
+                    <input
+                        type="number"
+                        id="preco">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Estoque</label>
+
+                    <input
+                        type="number"
+                        id="estoque">
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Descrição</label>
+
+                <textarea
+                    id="descricao"
+                    rows="5"></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Imagem</label>
+
+                <input
+                    type="file"
+                    id="imagem">
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn-secondary"
+                    id="cancelModal">
+
+                    Cancelar
+
+                </button>
+
+                <button
+                    class="btn-primary">
+
+                    Salvar Produto
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</main>
+
+            <footer class="footer">
+
+                © 2026 AEG Performance
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="js/admin/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+.sidebar{
+
+    width:280px;
+    background:#1F2937;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    border-right:1px solid #374151;
+
+}
+
+.logo{
+
+    padding:35px;
+
+}
+
+.logo h2{
+
+    color:#fff;
+    font-size:26px;
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:#D90429;
+
+}
+
+.menu{
+
+    flex:1;
+
+}
+
+.menu ul{
+
+    padding:20px;
+
+}
+
+.menu li{
+
+    margin-bottom:10px;
+
+}
+
+.menu a{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    padding:15px 18px;
+
+    color:#d1d5db;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    background:#374151;
+
+    color:#fff;
+
+}
+
+.menu .active a{
+
+    background:#D90429;
+
+    color:#fff;
+
+}
+
+.menu i{
+
+    width:20px;
+
+    text-align:center;
+
+}
+
+.sidebar-user{
+
+    padding:25px;
+
+    border-top:1px solid #374151;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.avatar{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:#D90429;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-size:20px;
+
+}
+
+.user-info h4{
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+.user-info p{
+
+    color:#9CA3AF;
+
+    font-size:13px;
+
+}

@@ -1,0 +1,248 @@
+/* ===========================
+        TOP BAR
+=========================== */
+
+.top-bar{
+
+    background:#090909;
+
+    color:#ffffff;
+
+    font-size:14px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.top-bar .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 20px;
+
+}
+
+.top-left,
+.top-right{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+/* ===========================
+          HEADER
+=========================== */
+
+header{
+
+    background:#111111;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.30);
+
+}
+
+.header-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:90px;
+
+}
+
+/* ===========================
+          LOGO
+=========================== */
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+.logo span{
+
+    color:#D90429;
+
+}
+
+/* ===========================
+        PESQUISA
+=========================== */
+
+.search-box{
+
+    display:flex;
+
+    width:500px;
+
+    height:48px;
+
+    background:#1c1c1c;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    padding:0 20px;
+
+    background:transparent;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+.search-box input::placeholder{
+
+    color:#bdbdbd;
+
+}
+
+.search-box button{
+
+    width:60px;
+
+    background:#D90429;
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+.search-box button:hover{
+
+    background:#EF233C;
+
+}
+
+/* ===========================
+        ÍCONES
+=========================== */
+
+.header-icons{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.header-icons a{
+
+    color:white;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.header-icons a:hover{
+
+    color:#D90429;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+          MENU
+=========================== */
+
+.navbar{
+
+    background:#1a1a1a;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:45px;
+
+}
+
+.navbar li{
+
+    padding:18px 0;
+
+}
+
+.navbar a{
+
+    color:white;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#D90429;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#D90429;
+
+}
+
+.navbar a:hover::after{
+
+    width:100%;
+
+}

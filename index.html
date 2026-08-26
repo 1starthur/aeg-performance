@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +12,17 @@
     <title>AEG Performance</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -41,37 +50,64 @@
 
     <header>
 
-        <div class="container header-content">
+    <div class="container header-content">
 
-            <div class="logo">
-                AEG <span>Performance</span>
-            </div>
+        <a href="#" class="logo">
+            <span>AEG</span> Performance
+        </a>
 
-            <div class="search-box">
+        <div class="search-container">
 
-                <input type="text" placeholder="Pesquisar peças, marcas ou códigos...">
+    <select>
 
-                <button>🔍</button>
+        <option>Todas as Categorias</option>
+        <option>Motor</option>
+        <option>Freios</option>
+        <option>Suspensão</option>
+        <option>Elétrica</option>
+        <option>Óleos</option>
+        <option>Performance</option>
 
-            </div>
+    </select>
 
-            <div class="actions">
+    <input
+        type="text"
+        placeholder="Pesquisar peças, marcas ou código..."
+    >
 
-                <button class="login">
-                    👤 Minha Conta
-                </button>
+    <button>
 
-                <button class="favorites">
-                    ❤
-                </button>
+        <i class="fa-solid fa-magnifying-glass"></i>
 
-                <button class="cart">
-                    🛒
-                </button>
+    </button>
 
-            </div>
+</div>
+
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
 
         </div>
+
+        <div class="header-icons">
+
+            <a href="#">
+                <i class="far fa-user"></i>
+            </a>
+
+            <a href="#">
+                <i class="far fa-heart"></i>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+        </div>
+
+    </div>
+    
+
 
     </header>
 
@@ -79,32 +115,40 @@
 
     <nav class="navbar">
 
-        <div class="container">
+    <div class="container">
 
-            <ul>
+        <ul>
 
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Marcas</a></li>
-                <li><a href="#">Promoções</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+            <li><a href="#">Home</a></li>
 
-            </ul>
+            <li><a href="#">Produtos</a></li>
 
-        </div>
+            <li><a href="#">Categorias</a></li>
 
-    </nav>
+            <li><a href="#">Marcas</a></li>
+
+            <li><a href="#">Promoções</a></li>
+
+            <li><a href="#">Contato</a></li>
+
+        </ul>
+
+    </div>
+
+</nav>
 
     <!-- ================= HERO ================= -->
 
     <section class="hero">
 
-        <div class="container hero-content">
+    <div class="overlay"></div>
 
-            <span class="tag">
-                PERFORMANCE AUTOMOTIVA
+    <div class="container hero-container">
+
+        <div class="hero-text">
+
+            <span class="hero-tag">
+                PEÇAS • PERFORMANCE • QUALIDADE
             </span>
 
             <h1>
@@ -112,198 +156,216 @@
             </h1>
 
             <p>
-
-                Encontre peças automotivas, acessórios e componentes
-                das melhores marcas do mercado.
-
+                Encontre peças nacionais e importadas das melhores marcas para deixar seu veículo com mais desempenho, segurança e confiabilidade.
             </p>
 
             <div class="hero-buttons">
 
-                <button class="btn-primary">
+                <a href="#" class="btn-primary">
                     Ver Produtos
-                </button>
+                </a>
 
-                <button class="btn-secondary">
+                <a href="#" class="btn-secondary">
                     Promoções
-                </button>
+                </a>
 
             </div>
 
         </div>
 
-    </section>
+        <div class="hero-image">
+
+            <img src="img/banners/banner-carro.jpg" alt="Carro Esportivo">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= MARCAS ================= -->
+
+<section class="brands">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>QUALIDADE GARANTIDA</span>
+            <h2>Trabalhamos com as melhores marcas</h2>
+            <p>
+                Comercializamos peças automotivas de fabricantes reconhecidos
+                nacional e internacionalmente.
+            </p>
+        </div>
+
+        <div class="brands-grid">
+
+            <div class="brand-card">
+                <img src="img/marcas/bosch.jpg" alt="Bosch">
+            </div>
+
+            <div class="brand-card">
+                <img src="img/marcas/ngk.jpg" alt="NGK">
+            </div>
+
+        
+
+            <div class="brand-card">
+                <img src="img/marcas/skf.jpg" alt="SKF">
+            </div>
+
+            <div class="brand-card">
+                <img src="img/marcas/mobil.jpg" alt="Mobil">
+            </div>
+
+            <div class="brand-card">
+                <img src="img/marcas/monroe.jpg" alt="Monroe">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- ================= CATEGORIAS ================= -->
 
-    <section class="categories">
 
-        <div class="container">
 
-            <h2>Categorias</h2>
+        <section class="categories">
 
-            <div class="category-grid">
+    <div class="container">
 
-                <div class="category-card">Motor</div>
+        <div class="section-title">
+            <span>NAVEGUE POR CATEGORIA</span>
+            <h2>Encontre a peça ideal para o seu veículo</h2>
+            <p>Motor, freios, suspensão, elétrica e muito mais para manutenção e performance.</p>
+        </div>
 
-                <div class="category-card">Freios</div>
+        <div class="category-grid">
 
-                <div class="category-card">Suspensão</div>
+            <a href="#" class="category-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Motor</h3>
+                <p>Filtros, velas, correias e componentes internos.</p>
+            </a>
 
-                <div class="category-card">Elétrica</div>
+            <a href="#" class="category-card">
+                <i class="fas fa-circle-dot"></i>
+                <h3>Freios</h3>
+                <p>Pastilhas, discos, pinças e fluido de freio.</p>
+            </a>
 
-                <div class="category-card">Óleos</div>
+            <a href="#" class="category-card">
+                <i class="fas fa-car-side"></i>
+                <h3>Suspensão</h3>
+                <p>Amortecedores, molas e kits completos.</p>
+            </a>
 
-                <div class="category-card">Performance</div>
+            <a href="#" class="category-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Elétrica</h3>
+                <p>Baterias, alternadores, sensores e iluminação.</p>
+            </a>
 
-            </div>
+            <a href="#" class="category-card">
+                <i class="fas fa-oil-can"></i>
+                <h3>Óleos</h3>
+                <p>Lubrificantes, aditivos e fluidos automotivos.</p>
+            </a>
+
+            <a href="#" class="category-card">
+                <i class="fas fa-gauge-high"></i>
+                <h3>Performance</h3>
+                <p>Turbos, filtros esportivos e upgrades de potência.</p>
+            </a>
 
         </div>
 
-    </section>
-
-    <!-- ================= MARCAS ================= -->
-
-    <section class="brands">
-
-        <div class="container">
-
-            <h2>Marcas Parceiras</h2>
-
-            <div class="brand-grid">
-
-                <div class="brand">Bosch</div>
-
-                <div class="brand">NGK</div>
-
-                <div class="brand">Cofap</div>
-
-                <div class="brand">SKF</div>
-
-                <div class="brand">Mobil</div>
-
-                <div class="brand">Monroe</div>
-
-            </div>
-
-        </div>
+    </div>
 
     </section>
+
+    
 
     <!-- ================= PRODUTOS ================= -->
+<section class="featured-products">
 
-    <section class="products">
+    <div class="container">
 
-        <div class="container">
+        <div class="section-title">
+
+            <span>PRODUTOS</span>
 
             <h2>Produtos em Destaque</h2>
 
-            <div class="product-grid">
-
-                <div class="product-card">
-
-                    <img src="img/products/filtro-ar.jpg" alt="Filtro de Ar">
-
-                    <h3>Filtro de Ar Esportivo</h3>
-
-                    <p class="price">
-                        R$ 149,90
-                    </p>
-
-                    <button>
-                        Comprar
-                    </button>
-
-                </div>
-
-                <div class="product-card">
-
-                    <img src="img/products/pastilha-freio.jpg" alt="Pastilha de Freio">
-
-                    <h3>Pastilha de Freio</h3>
-
-                    <p class="price">
-                        R$ 89,90
-                    </p>
-
-                    <button>
-                        Comprar
-                    </button>
-
-                </div>
-
-                <div class="product-card">
-
-                    <img src="img/products/amortecedor.jpg" alt="Amortecedor">
-
-                    <h3>Amortecedor Premium</h3>
-
-                    <p class="price">
-                        R$ 299,90
-                    </p>
-
-                    <button>
-                        Comprar
-                    </button>
-
-                </div>
-
-            </div>
+            <p>
+                Confira alguns dos produtos disponíveis na AEG Performance.
+            </p>
 
         </div>
 
-    </section>
+        <div id="products-grid" class="products-grid">
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- ================= BENEFÍCIOS ================= -->
 
     <section class="benefits">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="benefit">
+        <div class="benefits-grid">
 
-                🚚
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-truck-fast"></i>
 
                 <h3>Entrega Rápida</h3>
 
-                <p>Envio para todo o Brasil.</p>
+                <p>Enviamos para todo o Brasil com rapidez e segurança.</p>
 
             </div>
 
-            <div class="benefit">
+            <div class="benefit-card">
 
-                🔒
+                <i class="fa-solid fa-shield-halved"></i>
 
-                <h3>Pagamento Seguro</h3>
+                <h3>Compra Segura</h3>
 
-                <p>Compra protegida.</p>
-
-            </div>
-
-            <div class="benefit">
-
-                🛠️
-
-                <h3>Garantia</h3>
-
-                <p>Produtos com garantia.</p>
+                <p>Seus dados protegidos durante toda a compra.</p>
 
             </div>
 
-            <div class="benefit">
+            <div class="benefit-card">
 
-                📞
+                <i class="fa-solid fa-credit-card"></i>
 
-                <h3>Suporte</h3>
+                <h3>Parcelamento</h3>
 
-                <p>Atendimento especializado.</p>
+                <p>Parcele suas compras em até 12x no cartão.</p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>Suporte Especializado</h3>
+
+                <p>Equipe preparada para ajudar você na escolha das peças.</p>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
+</section>
     <!-- ================= SOBRE ================= -->
 
     <section class="sobre">
@@ -410,6 +472,8 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
