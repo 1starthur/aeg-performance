@@ -26,4 +26,16 @@ public class ProdutoController {
 
         produtos.removeIf(produto -> produto.getId() == id);
     }
+    @PutMapping("/produtos/{id}")
+    public Produto atualizarProduto(@PathVariable Long id, @RequestBody Produto produto){
+
+        for (int i = 0; i< produtos.size();i++){
+            if (produtos.get(i).getId() == id){
+                produtos.set(i, produto);
+                return produto;
+            }
+
+        }
+        return null;
+    }
 }
