@@ -7,6 +7,10 @@ public class Produto {
     private double preco;
     private int estoque;
 
+    public Produto(){
+
+    }
+
     public Produto(long id,String nome, double preco, int estoque){
         this.id = id;
         this.nome = nome;
@@ -26,5 +30,17 @@ public class Produto {
 
     public int getEstoque() {
         return estoque;
+    }
+    public void setId(long id){
+        this.id = id;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public void setPreco(Double preco){
+        this.preco = preco;
+    }
+    public void setEstoque (int Estoque){
+        this.estoque = estoque;
     }
 }
